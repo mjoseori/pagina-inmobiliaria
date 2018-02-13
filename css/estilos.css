@@ -97,7 +97,6 @@ header .burguer {
     align-items: center;
 }
 
-
 h2 {
   margin-bottom: 30px;
 }
@@ -108,6 +107,7 @@ h3 {
     font-size: 30px;
     padding: 20px 20px;
 }
+
 .primera {
     position: absolute;
     bottom: -35px;
@@ -124,24 +124,12 @@ h3 {
     border-radius: 35px;
 }
 
-.contendor30 {
+.contenedor30 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
-    margin-inline-start: 300px;
+    flex-direction: row;
+    justify-content: space-around;
 }
-/* img .izquierda {
-    padding-left: 300px;
-    padding-right: 150px;
-}
-
-img .derecha {
-    padding-right: 300px;
-    padding-left: 150px;
-} */
-
+    
 /*Layout*/
 
 .fila {
@@ -151,6 +139,7 @@ img .derecha {
     flex-wrap: wrap;
     
 }
+
 .col1 {
     padding: 60px;
     flex-basis: 300px;
@@ -163,26 +152,30 @@ img .derecha {
     flex-grow: 3;
 }
 
-/* .col50 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 50px 20px 50px 20px;
-} */
-
 .col100 {
     width: 100%;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .centrado {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.paginacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.pagina {
+        background-color: white;
+        color: black;
+        border: 1px solid rgb(241, 86, 241);
 }
 
 /*Footer*/
@@ -193,8 +186,7 @@ footer {
     flex-wrap: wrap;
     background-color:#d492c7;
     background-size: 16px;
-    position: relative;
-    
+    position: relative;  
 }
 
 footer p {
@@ -310,8 +302,7 @@ footer p {
 }
 
 .ultima {
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px;}
 
 /*Páginas de compra y alquileres*/
 
@@ -326,33 +317,36 @@ footer p {
         grid-template-rows: repeat(2, 400px);
         grid-gap: 40px;
         justify-content: space-around;
-    }
-    .tarjeta {
+}
+
+.tarjeta {
         width: 300px;
         height: 500px;
         box-shadow: 2px 2px 4px grey;
         background-color: burlywood;
-    }
+}
     
-    .imagen {
+.imagen {
         width: 300px;
         height: 200px;
         overflow: hidden;
         border-radius: 15%;
-    }
-    .imagen img {
-        height: 300px;
-    }
+}
 
-    boton {
+.imagen img {
+        height: 300px;
+}
+
+.boton {
         height: 100px;
         padding: 5px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-    }
-    .btn {
+}
+
+.btn {
         background-color: crimson;
         color: white;
         font-size: 16px;
@@ -360,19 +354,20 @@ footer p {
         border-radius: 10px;
         text-decoration: none;
         border-bottom: 4px solid rgb(82, 4, 4);
-    }
-    .btn:hover {
-        color: darkred;
-    }
+}
 
-    .datos {
+.btn:hover {
+        color: darkred;
+}
+
+.datos {
         height: 100px;
         padding: 5px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-    }
+}
     
 
 /* --------------------------------------------------------------------
@@ -384,12 +379,10 @@ footer p {
     footer .izda, footer .centro, footer .dcha {
         flex-basis: 200px;
     }
-
 }
 
 @media (max-width: 800px){
-    nav {display: none;
-}
+    nav {display: none;}
 
 header .burguer {
     display: initial;
